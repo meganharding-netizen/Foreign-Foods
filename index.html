@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Foreign Foods</title>
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <header class="home">
+      <div class="containter">
+         <div class="text-center col-md-12">
+               <h1>Foreign Food</h1>
+         </div>
+         <div class="text-center col-md-12">
+               <h2>CONNECTING THROUGH FOOD</h2>
+         </div>
+         <div class="text-center col-md-12">
+               <h4>Megan Harding</h4>
+         </div>
+      </div>
+      <h6 id = "welcome"></h6>
+	    <script>
+	        let name = prompt("What is your name?");
+	        let welcome = document.getElementById("welcome");
+	        welcome.innerHTML = "Welcome to my site, " + name +"!";
+	    </script>
+   </header>
+
+   <main class="home">
+      <h3>Purpose</h3>
+      <h5>This website was made so that individuals or families could learn about the world through food.</h5>
+      <table border="1" class="table">
+         <tr class="table-title row table-borderless">
+            <th class="col-md-4 col-sm-none"></th>
+            <th class="col-md-4 text-center col-sm-12">Continents</th>
+            <th class="col-md-4 col-sm-none"></th>
+         </tr>
+         <tr class="row">
+            <td class="col-md-4 col-sm-12 text-center"><a href="North-America.html">North America</a></td>
+            <td class="col-md-4 col-sm-12 text-center"><a href="south-america.html">South America</a></td>
+            <td class="col-md-4 col-sm-12 text-center"><a href="europe.html">Europe</a></td>
+         </tr>
+         <tr class="row">
+            <td class="col-md-4 col-sm-12 text-center"><a href="asia.html">Asia</a></td>
+            <td class="col-md-4 col-sm-12 text-center"><a href="africa.html">Africa</a></td>
+            <td class="col-md-4 col-sm-12 text-center"><a href="australia.html">Australia</a></td>
+         </tr>
+      </table>
+   </main>
+
+   <footer>
+      <div class="containter">
+      <h3>Feedback Form</h3>
+      <div class="row row-content">
+         <div class="card col-12">
+            <h5 class="card-header">I appreciate the Feedback</h5>
+            <div class="card-body">
+            <form>
+               <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea class="form-control" id="feedback" rows="4" placeholder="Share your thoughts..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Submit Feedback</button>
+              </div>
+            </form>
+            </form>
+            </div>
+         </div>
+      </div>
+      </div>
+   </footer>
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
